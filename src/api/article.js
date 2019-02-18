@@ -1,7 +1,10 @@
 import request from 'utils/request'
 
 const url = '/blogs'
-
+/**
+ *
+ * @param {object} param0
+ */
 export function getBlog({ pageNumber, pageSize }) {
   return request({
     url: `${url}?page=${pageNumber}&size=${pageSize}`,
